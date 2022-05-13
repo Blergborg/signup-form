@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital@0;1&display=swap');
+
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Roboto', sans-serif; */
+:root {
+  --logo-ff: 'Abril Fatface', cursive;
+  --main-ff: 'Roboto', sans-serif;
+  --accnt-color: #558812;
+  --light-color: #FCFDC3;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+.sidebar {
+  background-image: url(./img/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: var(--logo-ff);
+  height: 100vh;
+  flex: 1.5;
+  color: var(--light-color);
+}
+.logo img {
+  height: 150px;
+}
+
+.content {
+  font-family: var(--main-ff);
+  flex: 2;
+}

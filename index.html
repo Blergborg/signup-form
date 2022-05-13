@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Trail Monkey</title>
 </head>
+
 <body>
-  <header>
-    This is a fake sign-up sheet. 
-    But it's a <em>GREAT</em> fake sign-up sheet. 
-    Wanna see? Sign-up today!
-    (not actually, though)
-  </header>
-  <aside>
-    <img src="./img/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg" alt="A nice hiking trail in a forest.">
-    <p>Photo by Lukasz Szmigiel on Unsplash</p>
-    <img src="./img/monkey-g2c2511dce_640.png" alt="Snow Monkey outline">
-    <p>Trail Monkey (fake hiking recommendations)</p>
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="./img/monkey-g2c2511dce_640.png" alt="Snow Monkey outline">
+      <h1>Trail Monkey</h1>
+      <p>(fake hiking recommendations)</p>
+    </div>
+    <p class="credit">Photo by <a href="#">Lukasz Szmigiel</a> on <a href="#">Unsplash</a></p>
   </aside>
-  <div class="form-container">
-    <legend></legend>
-    <form action="" method="post">
-      <fieldset id="name-info">
-        <label for="firstName">First Name</label>
-        <input type="text" name="firstName">
-        <label for="lastName">Last Name</label>
-        <input type="text" name="lastName">
-      </fieldset>
-      <fieldset id="contact-info">
-        <label for="email">Email</label>
-        <input type="email" name="email">
-        <label for="phone">Phone Number</label>
-        <input type="tel" name="phone">
-      </fieldset>
-      <fieldset id="password-info">
-        <label for="password">Password</label>
-        <input type="password" name="password">
-        <label for="confirmPassword">Confirm Password</label>
-        <input type="password" name="confirmPassword">
-      </fieldset>
-    </form>
-  </div>
-  <div class="login">
-    <button>Create Account</button>
-    <p>Already have an account? <a href="#">Log in</a></p>
-  </div>
+
+  <main class="content">
+    <div class="intro">
+      This is a fake sign-up sheet.
+      But it's a <em>GREAT</em> fake sign-up sheet.
+      Wanna see? Sign-up today!
+      <br>
+      (not actually, though)
+    </div>
+    <div class="form-container">
+      <legend>Let's do this!</legend>
+      <form action="" method="post">
+        <!-- <fieldset id="name-info"> -->
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName">
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName">
+        <!-- </fieldset> -->
+        <!-- <fieldset id="contact-info"> -->
+          <label for="email">Email</label>
+          <input type="email" name="email">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone">
+        <!-- </fieldset> -->
+        <!-- <fieldset id="password-info"> -->
+          <label for="password">Password</label>
+          <input type="password" name="password">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" name="confirmPassword">
+        <!-- </fieldset> -->
+      </form>
+    </div>
+    <div class="login">
+      <button>Create Account</button>
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
+  </main>
 
 </body>
+
 </html>

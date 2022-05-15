@@ -22,6 +22,7 @@
     <div class="intro">
       This is a fake sign-up sheet.
       But it's a <em>GREAT</em> fake sign-up sheet.
+      <br>
       Wanna see? Sign-up today!
       <br>
       (not actually, though)
@@ -29,24 +30,24 @@
     <div class="form-container">
       <legend><h2>Let's do this!</h2></legend>
       <form action="" method="post">
-        <!-- <fieldset id="name-info"> -->
+        <div class="inputs">
+        <div class="column1">
           <label for="firstName">First Name</label>
           <input type="text" name="firstName">
-          <label for="lastName">Last Name</label>
-          <input type="text" name="lastName">
-        <!-- </fieldset> -->
-        <!-- <fieldset id="contact-info"> -->
           <label for="email">Email</label>
           <input type="email" name="email">
-          <label for="phone">Phone Number</label>
-          <input type="tel" name="phone">
-        <!-- </fieldset> -->
-        <!-- <fieldset id="password-info"> -->
           <label for="password">Password</label>
           <input class="error" type="password" name="password">
+        </div>
+        <div class="column2">
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone">
           <label for="confirmPassword">Confirm Password</label>
           <input class="error" type="password" name="confirmPassword">
-        <!-- </fieldset> -->
+        </div>
+        </div>
       </form>
     </div>
     <div class="login">

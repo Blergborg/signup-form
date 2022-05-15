@@ -79,18 +79,20 @@ body {
   flex-direction: column;
 }
 
-/* .intro, 
+ .intro, 
 .form-container, 
 .login {
-  padding: 2vw;
-} */
+  padding: 3rem;
+} 
+
+.intro {
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
 
 .form-container {
   background-color: white;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .2);
-
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 
 legend {
@@ -99,16 +101,27 @@ legend {
 
 form {
   display: flex;
-  /* flex-flow: row wrap; */
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-flow: column wrap;
+  align-items: flex-start;
   font-size: 1rem;
 }
 
-/* label {
-  position: relative;
-  width: 6rem;
-} */
+.inputs {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3rem;
+}
+
+.column1,
+.column2 {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+label {
+  margin: 1.5rem 0 0.15rem 0;
+}
+
 
 button[type='submit'] {
   font-size: 1.5rem;
@@ -131,15 +144,18 @@ button[type='submit']:hover {
 }
 
 .content a:hover {
+  text-decoration: underline;
   color:dodgerblue;
 }
 
 input {
-  border: 1px solid #e5e7eb
+  border: 1px solid #e5e7eb;
+  outline: none;
+  width: 15rem;
+  height: 2rem;
 }
 
 input:focus {
-  outline: none;
   border: 3px solid #1e90ff;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
 }
